@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activities.MyProfileActivity">
+
+    <item
+        android:id="@+id/action_logout"
+        android:title="Log out"
+        app:showAsAction="always"
+        android:icon="@drawable/logout"
+        />
+
+    <item
+        android:id="@+id/action_customize_profile"
+        android:title="Customize Profile"
+        app:showAsAction="always"
+        android:icon="@drawable/customize"
+        />
+
+</menu>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </com.google.android.gms.maps.MapView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Spinner
+            android:id="@+id/spinner_countries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#b7ffffff"
+            android:popupBackground="#b7ffffff"
+            android:layout_alignRight="@+id/fab"
+            android:layout_below="@+id/fab"
+            android:entries="@array/location_arraysResc" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end|top"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/paperplane"
+            android:tint="#000000"
+            app:elevation="6dp"
+            app:borderWidth="0dp"
+            app:rippleColor="#eF43ef" />
+    </RelativeLayout>
+
+
+
+</FrameLayout>

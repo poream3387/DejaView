@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">DejaView</string>
+    <string name="title_activity_maps">DejaView</string>
+    <string name="myprofile_tab1">Photos</string>
+    <string name="myprofile_tab2">Posts</string>
+    <string name="myprofile_tab3">Friends</string>
+
+    //페이스북
+    <string name="facebook_app_id">486633695041458</string>
+    <string name="fb_login_protocol_scheme">fb486633695041458</string>
+
+
+    <string-array name="location_arraysResc">
+        <item>SouthKorea</item>
+        <item>SouthKorea</item>
+        <item>SouthKorea</item>
+        <item>SouthKorea</item>
+        <item>SouthKorea</item>
+        <item>SouthKorea</item>
+        <item>SouthKorea</item>
+        <item>SouthKorea</item>
+        <item>SouthKorea</item>
+        <item>SouthKorea</item>
+        <item>Romania</item>
+        <item>US</item>
+        <item>Canada</item>
+        <item>Russia</item>
+        <item>Japan</item>
+        <item>China</item>
+        <item>France</item>
+        <item>Germany</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="createAccount_failed">회원가입에 실패하였습니다.</string>
+    <string name="signin_failed">로그인에 실패하였습니다.</string>
+    <string name="createAccount_successful">계정이 생성되었습니다.</string>
+    <string name="signIn_success">로그인에 성공하였습니다.</string>
+    <string name="check_emailPassword">이메일 또는 비밀번호를 확인해주세요.</string>
+</resources>

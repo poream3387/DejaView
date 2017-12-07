@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/myprofiletoolbarbackground"
+    android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:layout_collapseMode="pin"
+    android:elevation="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#0000"
+            android:onClick="backArrowBtn"
+            android:scaleType="fitXY"
+            android:src="@drawable/backarrow" />
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="MyProfile"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#0000"
+            android:onClick="addFriendsBtn"
+            android:scaleType="fitXY"
+            android:src="@drawable/addfriend" />
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

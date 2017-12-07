@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.poream.dejaview.Activities.SetupActivity">
+
+    <ImageButton
+        android:src="@drawable/profileicon"
+        android:id="@+id/ib_setup_profileimage"
+        android:scaleType="fitXY"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="44dp"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+
+    <EditText
+        android:id="@+id/setup_FirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="성"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/setup_LastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="이름"
+        android:inputType="textPersonName"/>
+
+
+    <EditText
+        android:id="@+id/setup_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="나이"
+        android:inputType="numberDecimal"/>
+    <EditText
+        android:id="@+id/setup_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="지역(국가)"
+        android:inputType="text"/>
+    <RadioGroup
+        android:id="@+id/setup_genderRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/setup_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="남성"/>
+        <RadioButton
+            android:id="@+id/setup_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여성"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/setup_submitBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="submit"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="503dp" />
+</LinearLayout>

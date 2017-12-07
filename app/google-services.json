@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "87654826466",
+    "firebase_url": "https://dejaview-f1aeb.firebaseio.com",
+    "project_id": "dejaview-f1aeb",
+    "storage_bucket": "dejaview-f1aeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87654826466:android:db9501fedafbabce",
+        "android_client_info": {
+          "package_name": "org.poream.dejaview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87654826466-rc63dbqrj9d5j8g3tsgdh4nvtl2lvlth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.poream.dejaview",
+            "certificate_hash": "5d5b21e5950a1fba6a1f4f20d08440554e1f1a99"
+          }
+        },
+        {
+          "client_id": "87654826466-l5skqg0cvbrpb8q3qkt3it4b3golv8l7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.poream.dejaview",
+            "certificate_hash": "aea5b63fd57c9b07090de14ec602050b1cf84818"
+          }
+        },
+        {
+          "client_id": "87654826466-fh2c7ts5u5q872utajlf8m256v03a0jl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0EXq4rX3_Yr7mJBDfHCEKRKC16r194L8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87654826466-fh2c7ts5u5q872utajlf8m256v03a0jl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fd9ef9</color>
+    <color name="colorPrimaryDark">#dc54f7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mapTimelineBackGround">#0b0707</color>
+    <color name="buttons3background">#ffffff</color>
+    <color name="profileStatusBar">#441212</color>
+    <color name="profileToolBar">#01abfa</color>
+
+
+</resources>

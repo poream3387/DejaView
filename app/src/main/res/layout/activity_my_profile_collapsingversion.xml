@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_profile_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:fitsSystemWindows="true"
+    tools:context=".Activities.MyProfileActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="#0000"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/myprofile_background_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/beachpic" />
+
+                <LinearLayout
+                    android:id="@+id/profileInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/myprofile_background_pic"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/my_profile_pic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@mipmap/ic_launcher_round" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="#557b7474"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Matthew Lee"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:id="@+id/location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/placeholder" />
+
+                            <TextView
+                                android:id="@+id/userLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="Seoul, Korea" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/gender_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal">
+
+                            <ImageView
+                                android:id="@+id/genderImage"
+                                android:layout_width="20dp"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/masculine" />
+
+                            <TextView
+                                android:id="@+id/userAge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="20" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/include_profile_toolbar"
+                layout="@layout/tool_bar_myprofile" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ffffff"
+            app:tabMode="fixed" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <!-- <android.support.v4.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:clipToPadding="false"
+         android:scrollbars="vertical"
+         app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+         <android.support.v7.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:cardElevation="5dp"
+             android:layout_marginBottom="16dp"
+             app:cardUseCompatPadding="true">
+
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="vertical">
+
+                 <TextView
+                     android:textStyle="bold"
+                     android:textSize="20sp"
+                     android:layout_marginTop="12dp"
+                     android:padding="12dp"
+                     android:text="뉴스피드 목록"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" />
+
+                 <LinearLayout
+                     android:orientation="horizontal"
+                     android:padding="12dp"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+
+                     <ImageView
+
+                         android:contentDescription="@string/app_name"
+                         android:src="@drawable/eyeicon"
+                         android:layout_weight="1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:layout_gravity="center_vertical"
+                         android:textStyle="bold"
+                         android:textSize="20sp"
+                         android:padding="12dp"
+                         android:text="텍스트뷰1"
+                         android:layout_width="wrap_content"
+                         android:layout_weight="9"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+
+                 <TextView
+                     android:layout_gravity="center_vertical"
+                     android:textSize="13sp"
+                     android:lineSpacingMultiplier="1.5"
+                     android:padding="12dp"
+                     android:text="텍스트뷰1"
+                     android:layout_width="wrap_content"
+                     android:layout_weight="9"
+                     android:layout_height="wrap_content" />
+
+             </LinearLayout>
+
+
+         </android.support.v7.widget.CardView>
+
+     </android.support.v4.widget.NestedScrollView>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/profile_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/photocamera"
+        android:backgroundTint="@color/cardview_light_background"
+        app:elevation="6dp"
+        app:layout_anchorGravity="bottom|right"
+        app:layout_anchor="@id/app_bar_layout"
+        app:pressedTranslationZ="12dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>
